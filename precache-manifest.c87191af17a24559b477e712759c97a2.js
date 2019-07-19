@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c313e341574fcff7b4a5441251b13d1a",
+    "revision": "e546e3c64e6f18df1334f111ead12763",
     "url": "/gerador-de-piadas/index.html"
   },
   {
