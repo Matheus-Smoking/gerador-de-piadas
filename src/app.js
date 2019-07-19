@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import Logo from "./img/logo-chuck.png";
 import {
+  GlobalStyle,
   Container,
   Hero,
   Img,
   Title,
   Name,
   Menu,
-  Item
+  Item,
+  Section,
+  Joke,
+  Next
 } from "./globalStyle/style";
 
 class App extends Component {
@@ -17,9 +21,8 @@ class App extends Component {
     this.state = {
       categories: [],
       joke:'',
+      key:'',
     }
-      
-    
   }
 
   componentWillMount() {
@@ -38,6 +41,7 @@ class App extends Component {
   render() {
     return (
       <Container>
+        <GlobalStyle />
         <Hero>
           <Img src={Logo} alt="logo"/>
           <Title>Gerador de Piadas <Name>Chuck Norris</Name></Title>
@@ -45,18 +49,23 @@ class App extends Component {
             {
               this.state.categories.map((item, key) => {
                 return(
-                  <Item 
+                  <Item
+                  className = { this.state.key === key ? 'active' : '' }
                   key={key} 
-                  onClick={() => this.metodoClick(item)}
+                  onClick={() =>{
+                    this.metodoClick(item , key)
+                    return this.setState({key:key})
+                    }
+                  }
                   >{item}</Item>
                 )
               }
               )}
           </Menu>
-          <section>
-              <p>{this.state.joke.value}</p>
-              <p onClick={() => this.metodoClick(this.state.joke.categories)} >Proxima</p>
-          </section>
+          <Section>
+              <Joke>{this.state.joke.value ? this.state.joke.value : "Selecione uma Categoria" }</Joke>
+              <Next onClick={() => this.metodoClick(this.state.joke.categories[0])} >Proxima</Next>
+          </Section>
           </Hero>
       </Container>
     );

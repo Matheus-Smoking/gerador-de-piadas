@@ -1,9 +1,17 @@
 import styled from 'styled-components';
+import { createGlobalStyle, ThemeProvider } from 'styled-components'
+
+export const GlobalStyle = createGlobalStyle`
+  body {
+    margin:0 auto;
+    @import url('https://fonts.googleapis.com/css?family=Kalam|Roboto:400,500i,700&display=swap');
+  }
+`
 
 export const Container = styled.section`
-@import url('https://fonts.googleapis.com/css?family=Kalam|Roboto:400,500i,700&display=swap');
     background-color: #323c5c;
     padding: 17px 0;
+    min-height:98vh;
 `;
 
 export const Hero = styled.div`
@@ -19,16 +27,22 @@ export const Img = styled.img`
 export const Title = styled.h1`
     font-family: 'Kalam', cursive;
     color: #ffe000;
-    font-size: 35px;
+    font-size: 25px;
     margin: 0 auto;
     text-align: center;
+    @media screen and (min-width: 992px) {
+        font-size: 35px;
+    }
 `
 
 export const Name = styled.span`
     display: block;
     color: #ff0000;
-    font-size: 60px;
-    padding-left: 97px;
+    font-size: 30px;
+    padding-left: 9%;
+    @media screen and (min-width: 992px) {
+        font-size: 60px;
+    }
 `
 
 export const Menu = styled.ul`
@@ -70,5 +84,44 @@ export const Item = styled.li`
     &:hover:before {
         content: "";
         width: 100%;
-      }
+    }
+    &.active{
+        color: #ffe000;
+        :before {
+            content: "";
+            width: 100%;
+        }
+    }
+`;
+
+export const Section = styled.div`
+    font-family: 'Roboto',sans-serif;
+    max-width: 95%;
+    margin: 50px auto;
+    width: 500px;
+`;
+
+export const Joke = styled.div`
+    color:#fff;
+    padding:30px;
+    text-align:center;
+    font-size:25px;
+    font-weight:400;
+    border:2px solid #f00;
+`;
+
+export const Next = styled.p`
+    width: 100px;
+    float: right;
+    color: #f00;
+    text-align: center;
+    border: 1px solid #f00;
+    padding: 7px;
+    text-transform: uppercase;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover{
+        color: #fff;
+        background-color:#f00;
+    }
 `;
