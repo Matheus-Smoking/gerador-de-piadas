@@ -2,6 +2,8 @@
 
 Esse projeto ultiliza a api do chucknorris.io para buscar Piadas
 
+Para Visualizar O projeto [Clique Aqui!](https://matheus-smoking.github.io/gerador-de-piadas/)
+
 ## Guia Rapido
 
 ### Para rodar o Projeto:
