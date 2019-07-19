@@ -19,7 +19,6 @@ Para Visualizar O projeto [Clique Aqui!](https://matheus-smoking.github.io/gerad
  - React
  - Redux
  - Styled Components
- - Webpack
  - Babel
 
 
