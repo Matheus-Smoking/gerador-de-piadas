@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/gerador-de-piadas/static/js/main.e4a878df.chunk.js",
-    "main.js.map": "/gerador-de-piadas/static/js/main.e4a878df.chunk.js.map",
+    "main.js": "/gerador-de-piadas/static/js/main.d97bad28.chunk.js",
+    "main.js.map": "/gerador-de-piadas/static/js/main.d97bad28.chunk.js.map",
     "runtime~main.js": "/gerador-de-piadas/static/js/runtime~main.552fa9b8.js",
     "runtime~main.js.map": "/gerador-de-piadas/static/js/runtime~main.552fa9b8.js.map",
-    "static/js/2.ad591a15.chunk.js": "/gerador-de-piadas/static/js/2.ad591a15.chunk.js",
-    "static/js/2.ad591a15.chunk.js.map": "/gerador-de-piadas/static/js/2.ad591a15.chunk.js.map",
+    "static/js/2.0fee916a.chunk.js": "/gerador-de-piadas/static/js/2.0fee916a.chunk.js",
+    "static/js/2.0fee916a.chunk.js.map": "/gerador-de-piadas/static/js/2.0fee916a.chunk.js.map",
     "index.html": "/gerador-de-piadas/index.html",
-    "precache-manifest.c87191af17a24559b477e712759c97a2.js": "/gerador-de-piadas/precache-manifest.c87191af17a24559b477e712759c97a2.js",
+    "precache-manifest.915e658871e51720d91da6164d96cbca.js": "/gerador-de-piadas/precache-manifest.915e658871e51720d91da6164d96cbca.js",
     "service-worker.js": "/gerador-de-piadas/service-worker.js",
     "static/media/logo-chuck.png": "/gerador-de-piadas/static/media/logo-chuck.1dd8e68b.png"
   }

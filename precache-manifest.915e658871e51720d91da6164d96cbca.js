@@ -1,15 +1,15 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e546e3c64e6f18df1334f111ead12763",
+    "revision": "5217217c59eebee9fd497c1a20a71ad6",
     "url": "/gerador-de-piadas/index.html"
   },
   {
-    "revision": "6cccaa76e7a66a74d791",
-    "url": "/gerador-de-piadas/static/js/2.ad591a15.chunk.js"
+    "revision": "93d6556b9b4be1b81388",
+    "url": "/gerador-de-piadas/static/js/2.0fee916a.chunk.js"
   },
   {
-    "revision": "d4c6fa25047b83d557c9",
-    "url": "/gerador-de-piadas/static/js/main.e4a878df.chunk.js"
+    "revision": "28ae3c5df8342fb6b096",
+    "url": "/gerador-de-piadas/static/js/main.d97bad28.chunk.js"
   },
   {
     "revision": "d163589e7b56b7fd70cc",

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/gerador-de-piadas/precache-manifest.c87191af17a24559b477e712759c97a2.js"
+  "/gerador-de-piadas/precache-manifest.915e658871e51720d91da6164d96cbca.js"
 );
 
 self.addEventListener('message', (event) => {
