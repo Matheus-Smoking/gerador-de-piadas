@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { getCategory, getJoke } from './service/HttpService';
 import Logo from "./img/logo-chuck.png";
 import {
   GlobalStyle,
@@ -11,6 +13,7 @@ import {
   Item,
   Section,
   Joke,
+  Category,
   Next
 } from "./globalStyle/style";
 
@@ -26,16 +29,17 @@ class App extends Component {
   }
 
   componentWillMount() {
-    fetch(`https://api.chucknorris.io/jokes/categories`)
-    .then(res => res.json())
+    getCategory()
     .then(res => this.setState({ categories: res }))
-    
   }
 
   metodoClick(name){
-    fetch(`https://api.chucknorris.io/jokes/random?category=${name}`)
-    .then(res => res.json())
+    getJoke(name)
     .then(res => this.setState({ joke: res }))
+    this.props.dispatch({
+      lastCategory :name,
+      type : 'ADDSTATE',
+    })
   }
 
   render() {
@@ -62,6 +66,7 @@ class App extends Component {
               }
               )}
           </Menu>
+          <Category>{`Você Esta na Categoria : ${this.props.category}`}</Category>
           <Section>
               <Joke>{this.state.joke.value ? this.state.joke.value : "Selecione uma Categoria" }</Joke>
               <Next onClick={() => this.metodoClick(this.state.joke.categories[0])} >Proxima</Next>
@@ -72,4 +77,10 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    category: state
+  }
+}
+
+export default connect(mapStateToProps)(App); 

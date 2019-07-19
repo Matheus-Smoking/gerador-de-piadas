@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -60,8 +60,7 @@ export const Item = styled.li`
     font-size:20px;
     color: #fff;
     background-color: #323c5c;
-    padding: 10px;
-    margin: 2px 0;
+    padding: 5px 10px;
     text-transform:uppercase;
     font-weight:bold;
     cursor: pointer;
@@ -108,6 +107,19 @@ export const Joke = styled.div`
     font-size:25px;
     font-weight:400;
     border:2px solid #f00;
+`;
+
+export const Category = styled.p`
+    width: 500px;
+    max-width: 95%;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 7px 0;
+    text-transform: uppercase;
+    transition: 0.2s;
+    cursor: pointer;
+    margin: 45px auto;
 `;
 
 export const Next = styled.p`
