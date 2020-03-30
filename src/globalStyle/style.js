@@ -109,19 +109,6 @@ export const Joke = styled.div`
     border:2px solid #f00;
 `;
 
-export const Category = styled.p`
-    width: 500px;
-    max-width: 95%;
-    color: #fff;
-    text-align: center;
-    border: 1px solid #fff;
-    padding: 7px 0;
-    text-transform: uppercase;
-    transition: 0.2s;
-    cursor: pointer;
-    margin: 45px auto;
-`;
-
 export const Next = styled.p`
     width: 100px;
     float: right;
